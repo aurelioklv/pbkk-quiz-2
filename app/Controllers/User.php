@@ -1,11 +1,11 @@
 <?php
 
-// namespace App\Controllers;
+namespace App\Controllers;
 
-// class User extends BaseController
-// {
-//     public function index(): string
-//     {
-//         return view('user/index');
-//     }
-// }
+class User extends BaseController
+{
+    public function index(): string
+    {
+        return view('user/index');
+    }
+}
