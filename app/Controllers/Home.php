@@ -6,12 +6,18 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('auth/login');
+        $data = [
+            'config' => config('Auth'),
+        ];
+        return view('auth/login', $data);
     }
 
     public function register(): string
     {
-        return view('auth/register');
+        $data = [
+            'config' => config('Auth'),
+        ];
+        return view('auth/register', $data);
     }
 
     public function user(): string
