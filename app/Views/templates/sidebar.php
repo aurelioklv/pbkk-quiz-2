@@ -16,7 +16,7 @@
 
         <!-- Heading -->
         <div class="sidebar-heading">
-            User Management
+            Management
         </div>
 
         <!-- Nav Item - User List -->
@@ -26,28 +26,12 @@
                 <span>User List</span></a>
         </li>
 
-        <!-- Divider -->
-        <hr class="sidebar-divider">
-
-        <!-- Heading -->
-        <div class="sidebar-heading">
-            Book Management
-        </div>
-
         <!-- Nav Item - User List -->
         <li class="nav-item">
             <a class="nav-link" href="<?= base_url('admin/buku') ?>">
                 <i class="fas fa-book"></i>
                 <span>Book List</span></a>
         </li>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider">
-
-        <!-- Heading -->
-        <div class="sidebar-heading">
-            Transaction Management
-        </div>
 
         <!-- Nav Item - User List -->
         <li class="nav-item">
