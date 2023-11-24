@@ -21,14 +21,14 @@
 
         <!-- Nav Item - User List -->
         <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('admin') ?>">
+            <a class="nav-link" href="<?= base_url('admin/user') ?>">
                 <i class="fas fa-users"></i>
                 <span>User List</span></a>
         </li>
 
         <!-- Nav Item - User List -->
         <li class="nav-item">
-            <a class="nav-link" href="<?= base_url('admin/buku') ?>">
+            <a class="nav-link" href="<?= base_url('admin/book') ?>">
                 <i class="fas fa-book"></i>
                 <span>Book List</span></a>
         </li>
@@ -62,6 +62,37 @@
             <i class="fas fa-user-edit"></i>
             <span>Edit Profile</span></a>
     </li>
+
+    <?php if (in_groups('user')) : ?>
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Book
+        </div>
+
+        <!-- Nav Item - Book Catalogue -->
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('user/catalogue') ?>">
+                <i class="fas fa-book"></i>
+                <span>Catalogue</span></a>
+        </li>
+
+        <!-- Nav Item - Shopping Cart -->
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('user/cart') ?>">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Shopping Cart</span></a>
+        </li>
+
+        <!-- Nav Item - Users Transactions -->
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('user/transaction') ?>">
+                <i class="fas fa-credit-card"></i>
+                <span>Transaction</span></a>
+        </li>
+    <?php endif ?>
 
     <!-- Divider -->
     <hr class="sidebar-divider">

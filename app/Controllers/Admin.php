@@ -12,7 +12,7 @@ class Admin extends BaseController
     public function index(): string
     {
         $data = [
-            'title' => 'Admin | Users',
+            'title' => 'Users',
         ];
 
         // $db = \Config\Database::connect();
@@ -30,7 +30,7 @@ class Admin extends BaseController
     public function user($id = 0)
     {
         $data = [
-            'title' => 'Admin | User Detail',
+            'title' => 'User Detail',
         ];
 
         $builder = $this->db->table('users');
@@ -49,18 +49,20 @@ class Admin extends BaseController
         return view('admin/user', $data);
     }
 
-    public function buku(): string
+    public function book(): string
     {
+        $bookModel = new \App\Models\BookModel();
         $data = [
-            'title' => 'Admin | Book'
+            'title' => 'Book',
+            'books' => $bookModel->getBook()
         ];
-        return view('admin/buku', $data);
+        return view('admin/book', $data);
     }
 
     public function transaction(): string
     {
         $data = [
-            'title' => 'Admin | Transaction'
+            'title' => 'Transaction'
         ];
         return view('admin/transaction', $data);
     }
