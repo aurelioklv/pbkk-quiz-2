@@ -10,20 +10,22 @@
 
 
     <!-- If an Admin -->
-    <?php if (in_groups('admin')) : ?>
+    <?php if (in_groups('admin')): ?>
         <!-- Divider -->
         <hr class="sidebar-divider">
 
         <!-- Heading -->
         <div class="sidebar-heading">
             User Management
+            Management
         </div>
 
         <!-- Nav Item - User List -->
         <li class="nav-item">
             <a class="nav-link" href="<?= base_url('admin') ?>">
-                <i class="fas fa-users"></i>
-                <span>User List</span></a>
+                <a class="nav-link" href="<?= base_url('admin/user') ?>">
+                    <i class="fas fa-users"></i>
+                    <span>User List</span></a>
         </li>
 
         <!-- Divider -->
@@ -37,6 +39,10 @@
         <!-- Nav Item - User List -->
         <li class="nav-item">
             <a class="nav-link" href="<?= base_url('admin/buku') ?>">
+
+                <!-- Nav Item - User List -->
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('admin/book') ?>">
                 <i class="fas fa-book"></i>
                 <span>Book List</span></a>
         </li>
@@ -79,7 +85,37 @@
             <span>Edit Profile</span></a>
     </li>
 
-    <!-- Divider -->
+    <?php if (in_groups('user')): ?> <!-- Divider -->
+        <hr class="sidebar-divider">
+
+        <!-- Heading -->
+        <div class="sidebar-heading">
+            Book
+        </div>
+
+        <!-- Nav Item - Book Catalogue -->
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('user/catalogue') ?>">
+                <i class="fas fa-book"></i>
+                <span>Catalogue</span></a>
+        </li>
+
+        <!-- Nav Item - Shopping Cart -->
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('user/cart') ?>">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Shopping Cart</span></a>
+        </li>
+
+        <!-- Nav Item - Users Transactions -->
+        <li class="nav-item">
+            <a class="nav-link" href="<?= base_url('user/transaction') ?>">
+                <i class="fas fa-credit-card"></i>
+                <span>Transaction</span></a>
+        </li>
+    <?php endif ?>
+
+    ~ <!-- Divider -->
     <hr class="sidebar-divider">
 
     <!-- Nav Item - Logout -->

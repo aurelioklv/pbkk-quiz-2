@@ -4,7 +4,7 @@
 <div class="container-fluid">
 
     <!-- Page Heading -->
-    <h1 class="h3 mb-4 text-gray-800">Transaction List</h1>
+    <h1 class="h3 mb-4 text-gray-800"><?= $title ?></h1>
 
 </div>
-<?php $this->endSection(); ?>   
+<?php $this->endSection(); ?>

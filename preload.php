@@ -19,7 +19,11 @@
  *   0. Copy this file to your project root folder.
  *   1. Set the $paths property of the preload class below.
  *   2. Set opcache.preload in php.ini.
+<<<<<<< HEAD
  *     :
+=======
+ *     php.ini:
+>>>>>>> db411e367f3c4f9f2884b02004448b0397fa6ac1
  *     opcache.preload=/path/to/preload.php
  */
 

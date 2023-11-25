@@ -4,13 +4,14 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    public function index()
+
+    public function index(): string
     {
-        $data = [
-            'config' => config('Auth'),
-        ];
-        return view('auth/login', $data);
-        // return view('dashboard/landingpage');
+        // $data = [
+        //     'config' => config('Auth'),
+        // ];
+        // return view('auth/login', $data);
+        return view('dashboard/landingpage');
         // echo 'ini home index';
     }
 

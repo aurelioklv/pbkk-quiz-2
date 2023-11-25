@@ -30,7 +30,11 @@
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+<<<<<<< HEAD
                 <a class="dropdown-item" href="#">
+=======
+                <a class="dropdown-item" href="<?= base_url('user') ?>">
+>>>>>>> db411e367f3c4f9f2884b02004448b0397fa6ac1
                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                     My Profile
                 </a>
